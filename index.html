@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Python Learning Hub</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101827;
+    color: white;
+}
+
+header {
+    background: #17243a;
+    padding: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h2 {
+    color: #ffd43b;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.hero {
+    text-align: center;
+    padding: 85px 20px;
+    background: linear-gradient(135deg, #182d50, #263e68);
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #ffd43b;
+}
+
+.hero p {
+    margin: 20px;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffd43b;
+    color: #17243a;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+section {
+    padding: 45px 8%;
+}
+
+h2 {
+    margin-bottom: 25px;
+    color: #ffd43b;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1d2b42;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #354761;
+}
+
+.card h3 {
+    color: #ffd43b;
+    margin-bottom: 12px;
+}
+
+pre {
+    background: #080f1c;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    color: #7ee787;
+}
+
+.quiz {
+    background: #1d2b42;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.quiz button {
+    margin: 10px 5px 0 0;
+}
+
+#result {
+    margin-top: 15px;
+    color: #7ee787;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #17243a;
+    color: #bbb;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>🐍 Python Hub</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#lessons">Lessons</a>
+        <a href="#examples">Examples</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <h1>Learn Python Programming</h1>
+    <p>Start your coding journey today!</p>
+    <a href="#lessons" class="btn">Start Learning</a>
+</div>
+
+<section id="lessons">
+    <h2>📚 Python Lessons</h2>
+
+    <div class="container">
+        <div class="card">
+            <h3>01. Introduction</h3>
+            <p>Learn what Python is and why programmers use it.</p>
+        </div>
+
+        <div class="card">
+            <h3>02. Variables</h3>
+            <p>Learn how to store information in Python.</p>
+        </div>
+
+        <div class="card">
+            <h3>03. Data Types</h3>
+            <p>Understand strings, integers and floats.</p>
+        </div>
+
+        <div class="card">
+            <h3>04. Conditions</h3>
+            <p>Learn if, elif and else statements.</p>
+        </div>
+    </div>
+</section>
+
+<section id="examples">
+    <h2>💻 Python Code Examples</h2>
+
+    <div class="card">
+        <h3>Print Hello World</h3>
+        <p>Your first Python program:</p>
+        <pre>print("Hello, World!")</pre>
+    </div>
+
+    <br>
+
+    <div class="card">
+        <h3>Variables</h3>
+        <pre>
+name = "Python"
+age = 30
+
+print(name)
+print(age)
+        </pre>
+    </div>
+
+    <br>
+
+    <div class="card">
+        <h3>Add Two Numbers</h3>
+        <pre>
+a = 10
+b = 20
+
+result = a + b
+print(result)
+        </pre>
+    </div>
+</section>
+
+<section id="quiz">
+    <h2>🧠 Python Quiz</h2>
+
+    <div class="quiz">
+        <h3>Which command displays output in Python?</h3>
+
+        <button class="btn" onclick="check('a')">A. show()</button>
+        <button class="btn" onclick="check('b')">B. print()</button>
+        <button class="btn" onclick="check('c')">C. display()</button>
+
+        <p id="result"></p>
+    </div>
+</section>
+
+<footer>
+    <p>🐍 Python Learning Hub | Learn • Practice • Grow</p>
+</footer>
+
+<script>
+function check(answer) {
+    let result = document.getElementById("result");
+
+    if (answer === "b") {
+        result.innerHTML = "🎉 Correct! print() displays output.";
+    } else {
+        result.innerHTML = "❌ Try again! Keep learning.";
+    }
+}
+</script>
+
+</body>
+</html>
+
+<head>
+  <title>Untitled</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
